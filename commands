@@ -1,1 +1,12 @@
+Add source before run gazebo
+
 source /usr/share/gazebo/setup.sh
+
+after run the following command to open house map
+
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
+
+
+turtlebot control
+ros2 run turtlebot3_teleop teleop_keyboard
