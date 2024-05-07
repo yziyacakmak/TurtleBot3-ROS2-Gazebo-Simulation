@@ -16,7 +16,7 @@ class FrameSubNode(Node):
 
     def img_callback(self, data):
         self.get_logger().info('Receiving video frame')
-        current_frame = self.br.imgmsg_to_cv2(data)
+        current_frame = self.br.imgmsg_to_cv2(data, "bgr8")
         cv2.imshow("camera", current_frame)   
         cv2.waitKey(1)
         
